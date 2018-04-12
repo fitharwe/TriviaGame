@@ -1,0 +1,16 @@
+.jumbotron {
+    background-image: url('../images/black.jpg');
+    background-size: cover;
+}
+
+body {
+    background-image: url('../images/middleearth.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Marck Script', cursive !important;
+    color: tan !important;
+    font-size: 90px !important;
+}
