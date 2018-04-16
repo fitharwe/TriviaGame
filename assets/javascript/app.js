@@ -77,7 +77,7 @@ function newQuestion(){
 	$('#gif').empty();
 	answered = true;
 	
-	//sets up new questions & answerList
+	
 	$('#activeQuestion').html('Question #'+(activeQuestion+1)+'/'+triviaQuestions.length);
 	$('.question').html('<h2>' + triviaQuestions[activeQuestion].question + '</h2>');
 	for(var i = 0; i < 4; i++){
@@ -88,7 +88,7 @@ function newQuestion(){
 		$('.answerList').append(choices);
 	}
 	countdown();
-	//clicking an answer will pause the time and setup answerPage
+
 	$('.thisChoice').on('click',function(){
 		userSelect = $(this).data('index');
 		clearInterval(time);
@@ -100,7 +100,6 @@ function countdown(){
 	seconds = 15;
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
 	answered = true;
-	//sets timer to go down
 	time = setInterval(showCountdown, 1000);
 }
 
@@ -116,13 +115,13 @@ function showCountdown(){
 
 function answerPage(){
 	$('#activeQuestion').empty();
-	$('.thisChoice').empty(); //Clears question page
+	$('.thisChoice').empty(); 
 	$('.question').empty();
 
 	var rightAnswerText = triviaQuestions[activeQuestion].answerList[triviaQuestions[activeQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[activeQuestion].answer;
 	$('#gif').html('<img src = "assets/images/'+ gifArray[activeQuestion] +'.gif" width = "400px">');
-	//checks to see correct, incorrect, or unanswered
+
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswer++;
 		$('#message').html(messages.correct);

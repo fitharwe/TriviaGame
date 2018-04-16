@@ -21,7 +21,7 @@ h1 {
 	font-family: 'Marck Script', cursive !important;
 	font-size: 30px;
 	padding: 10px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .btn-primary:hover, .reset:hover{
     background-color: black;
@@ -29,8 +29,22 @@ h1 {
     cursor: pointer;
 }
 
+#instructions {
+    margin-top: 20px;
+	text-align: center;
+	height: 100%;
+    width: 1000px;
+    background-color: tan;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 23px;
+    border-style: double;
+    border-color: black;
+    border-width: 3px;
+    color: black;
+}
+
 #mainsection{
-	margin-top: 50px;
+	margin-top: 30px;
 	text-align: center;
 	height: 100%;
     width: 700px;
@@ -40,6 +54,7 @@ h1 {
     border-style: double;
     border-color: black;
     border-width: 3px;
+    margin-bottom: 50px;
 }
 
 h2, #message, #finalMessage{
