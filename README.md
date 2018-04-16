@@ -1,5 +1,7 @@
 # TriviaGame
 
+Play the game here! -> [Lord of the Rings Trivia](https://fitharwe.github.io/TriviaGame/)
+
 This is a Lord of the Rings Trivia Game. 
 
 To get started, click the "Play!" button. 
