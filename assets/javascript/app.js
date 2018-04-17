@@ -32,7 +32,7 @@ var triviaQuestions = [{
 	answer: 2
 },{
 	question: "What is the name of the sword that Bilbo gives to Frodo?",
-	answerList: ["Andúril", "Sting", "Galmdring", "Orcrist"],
+	answerList: ["Andúril", "Sting", "Glamdring", "Orcrist"],
 	answer: 1
 },{
 	question: "Who defeats the witch-king of Angmar?",
